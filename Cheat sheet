@@ -1,0 +1,1 @@
+grep –i veronica /usr/share/wordslists/rockyou.txt > /root/Desktop/dict.txt #grep all the words from rockyou.txt with veronica in them and sore them to dict.txt
