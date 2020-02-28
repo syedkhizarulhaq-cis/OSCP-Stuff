@@ -1,1 +1,4 @@
 grep –i veronica /usr/share/wordslists/rockyou.txt > /root/Desktop/dict.txt #grep all the words from rockyou.txt with veronica in them and sore them to dict.txt
+
+for x in 1066 1215 1466 67 1469 1514 1981 1986; do nmap -Pn –host_timeout 201 –max-retries 0 -p $x 192.168.0.102; done # script for port scanning with selected ports
+
