@@ -29,4 +29,7 @@ sudo -l #To find out what commands you can run as sudo
 /opt/gobuster/gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u https://10.10.10.60 -k -x txt #-k to ignore
 ssl certification verification and -x to add extension to every file in the wordlist
 
+nmap -sS -A --top-ports 1000 10.10.10.29 | tee nmap_bank.txt
+
+nikto -host IP
  
