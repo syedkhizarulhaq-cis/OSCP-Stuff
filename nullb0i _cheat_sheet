@@ -32,4 +32,7 @@ ssl certification verification and -x to add extension to every file in the word
 nmap -sS -A --top-ports 1000 10.10.10.29 | tee nmap_bank.txt
 
 nikto -host IP
+
+nmap -sC -sV -oA 10.10.10.29
+
  
