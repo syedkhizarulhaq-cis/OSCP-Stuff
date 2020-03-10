@@ -35,4 +35,4 @@ nikto -host IP
 
 nmap -sC -sV -oA 10.10.10.29
 
- 
+python -c 'import pty;pty.spawn("/bin/bash");'
