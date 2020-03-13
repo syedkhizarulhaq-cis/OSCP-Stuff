@@ -33,6 +33,8 @@ nmap -sS -A --top-ports 1000 10.10.10.29 | tee nmap_bank.txt
 
 nikto -host IP
 
-nmap -sC -sV -oA 10.10.10.29
+nmap -sC -sV -oA nmap 10.10.10.7 
 
 python -c 'import pty;pty.spawn("/bin/bash");'
+
+python3 dirsearch.py -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e php -f -t 20 -u http://10.10.10.7/admin/
