@@ -24,7 +24,9 @@ telnet 10.10.10.7 25 #telnet to see if the smtp port is responding
 
 nc lvnp 1337 #listen on port 1337 using ncat
 
-sudo -l #To find out what commands you can run as sudo
+sudo -l #To find out what commands you can run as 
+
+nano /etc/hosts #if you find a dns running edit your host file for resolving through it, example > 10.10.10.13     example.htb
 
 /opt/gobuster/gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u https://10.10.10.60 -k -x txt #-k to ignore
 ssl certification verification and -x to add extension to every file in the wordlist
