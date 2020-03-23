@@ -59,3 +59,5 @@ echo /asdasd23213sdasdasdwqeqweA= |base64 -d > file #copy the magic bytes, base6
 file file #run this command to find if the file is identified as your prefered one or not.
 
 dnsenum --enum example.htb
+
+sqlmap -r request.req #sqlmap for POST request 
