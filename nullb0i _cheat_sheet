@@ -71,3 +71,6 @@ nmap --script vuln -p135,139,445 10.10.10.40 -oA blue_scripts #If the target is 
 smbclient -L //10.10.10.40 #smb recon
 
 exploit -j #for runnung a listner in background in msfconsole
+
+find / -perm -4000 2>/dev/null #look for setuid binaries 
+find / -perm -4000 -ls 2>/dev/null #look for setuid binaries with permissions as well
