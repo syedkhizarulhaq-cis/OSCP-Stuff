@@ -79,6 +79,9 @@ exploit -j #for runnung a listner in background in msfconsole
 find / -perm -4000 2>/dev/null #look for setuid binaries 
 find / -perm -4000 -ls 2>/dev/null #look for setuid binaries with permissions as well
 
-nmap --script vuln /usr/share/nmap/scripts/smb-check-vulns.nse 10.10.10.178 -p445
+nmap --script vuln /usr/share/nmap/scripts/smb-check-vulns.nse 10.10.10.178 -p445 #nmap engine 
+nmap -p 445 --script "vuln and safe" -Pn -n 10.11.1.5  #For runnning nmap engine
 
 locate ms17-010 | grep .nse$ #Look for nmap scripts with ms17-010
+
+
