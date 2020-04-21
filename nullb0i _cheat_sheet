@@ -84,4 +84,6 @@ nmap -p 445 --script "vuln and safe" -Pn -n 10.11.1.5  #For runnning nmap engine
 
 locate ms17-010 | grep .nse$ #Look for nmap scripts with ms17-010
 
+uname -m # Find linux architecture
+
 
