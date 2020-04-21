@@ -86,4 +86,5 @@ locate ms17-010 | grep .nse$ #Look for nmap scripts with ms17-010
 
 uname -m # Find linux architecture
 
+gcc -m32 1397.c -o 1398 -Wl,--hash-style=both #compile c file with 32 bit architecture with both the hash styles
 
