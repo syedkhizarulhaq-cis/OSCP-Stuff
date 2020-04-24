@@ -8,3 +8,4 @@ https://github.com/areyou1or0/OSCP/blob/master/Enumeration (cheat sheet oscp)
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/ #Linux priv esc
 https://guide.offsecnewbie.com/privilege-escalation/linux-pe  #Linux priv esc
 https://detailed.wordpress.com/2017/10/28/understanding-ls-command-output/ #read ls -la output
+https://infinitelogins.com/2020/01/20/hack-the-box-write-up-devel-without-metasploit/ #how to execute file using local smb service
