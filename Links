@@ -10,3 +10,4 @@ https://guide.offsecnewbie.com/privilege-escalation/linux-pe  #Linux priv esc
 https://detailed.wordpress.com/2017/10/28/understanding-ls-command-output/ #read ls -la output
 https://infinitelogins.com/2020/01/20/hack-the-box-write-up-devel-without-metasploit/ #how to execute file using local smb service
 https://medium.com/@ranakhalil101/hack-the-box-bounty-writeup-w-o-metasploit-14467aea7815 #how to use juicy potato
+https://www.hackingtutorials.org/exploit-tutorials/mingw-w64-how-to-compile-windows-exploits-on-kali-linux/ #exploit cross compilation
