@@ -141,3 +141,6 @@ service_exec(conn, r'cmd /c net user /add ban ban123')
 net localgroup "Remote Desktop Users" ban /add #give permission for remote desktop
 net localgroup administrators ban /add #add user to administrator group for priv esc
 
+UDP scan top 1000 ports:
+nmap -sU -sV --version-intensity 0 -F -n 10.11.458.254
+
