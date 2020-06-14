@@ -144,3 +144,6 @@ net localgroup administrators ban /add #add user to administrator group for priv
 UDP scan top 1000 ports:
 nmap -sU -sV --version-intensity 0 -F -n 10.11.458.254
 
+Running nse script on a udp port:
+nmap -n -Pn -sU -p69 -sV --script tftp-enum 10.11.458.244
+
