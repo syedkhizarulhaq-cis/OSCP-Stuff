@@ -147,3 +147,6 @@ nmap -sU -sV --version-intensity 0 -F -n 10.11.458.254
 Running nse script on a udp port:
 nmap -n -Pn -sU -p69 -sV --script tftp-enum 10.11.458.244
 
+gobuster usage:
+gobuster dir -u http://10.11.1:95 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -o gobuster9505
+
