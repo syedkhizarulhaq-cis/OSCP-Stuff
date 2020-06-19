@@ -16,3 +16,4 @@ https://ivanitlearning.wordpress.com/2019/07/07/bypassing-default-uac-settings-m
 https://medium.com/@ranakhalil101/hack-the-box-tally-writeup-w-o-metasploit-b8bce0684ad3 #hack database ranakhalil htb tally
 https://krober.biz/misc/reverse_shell.php #reverse shell with customized IP and Port that you can set
 https://github.com/diego-treitos/linux-smart-enumeration/blob/master/lse.sh #for linux enumeration
+https://book.hacktricks.xyz/windows/active-directory-methodology/kerberoast #kerberoasting
