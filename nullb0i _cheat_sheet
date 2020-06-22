@@ -160,7 +160,9 @@ For mimikatz 2.1.1 :
 wget https://github.com/gentilkiwi/mimikatz/files/4167347/mimikatz_trunk.zip
 
 Accessing share with name in space:
-smbclient \\\\10.11.1.\\Bob\ Shard
+smbclient \\\\10.11.1.55\\Bob\ Shard
 
 Mount share:
-mount -t cifs //10.11.1.//Bob\ Shard ./smb
+mount -t cifs //10.11.1.55//Bob\ Shard ./smb
+
+mount -t cifs -o vers=1.0 //10.11.1.55/"Bob Shard"  smb #this is how it actually worked :)
