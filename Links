@@ -18,3 +18,4 @@ https://krober.biz/misc/reverse_shell.php #reverse shell with customized IP and 
 https://github.com/diego-treitos/linux-smart-enumeration/blob/master/lse.sh #for linux enumeration
 https://book.hacktricks.xyz/windows/active-directory-methodology/kerberoast #kerberoasting
 https://github.com/lelinhtinh/de4js #javasript obfuscator and unpacker
+https://raw.githubusercontent.com/MarkBuffalo/exploits/master/Samba/CVE-2010-0926.c #symlink directory traversal, samba
