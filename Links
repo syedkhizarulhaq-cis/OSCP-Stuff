@@ -20,3 +20,4 @@ https://book.hacktricks.xyz/windows/active-directory-methodology/kerberoast #ker
 https://github.com/lelinhtinh/de4js #javasript obfuscator and unpacker
 https://raw.githubusercontent.com/MarkBuffalo/exploits/master/Samba/CVE-2010-0926.c #symlink directory traversal, samba
 https://github.com/weaknetlabs/Penetration-Testing-Grimoire/blob/master/Vulnerabilities/SSH/key-exploit.md #ssh-dss key exploit
+https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/ #suid binaries priv esc
