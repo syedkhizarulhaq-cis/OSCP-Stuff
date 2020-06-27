@@ -180,3 +180,6 @@ Union based Oracle Sqli:
 
 UDP Scanning Netcat:
 nc -zuv 10.11.1.226 1-100->port range
+
+Searching in metapsloit with keywords:
+search platform:windows bid:5411
