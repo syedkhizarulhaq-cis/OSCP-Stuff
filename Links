@@ -28,3 +28,4 @@ http://securityidiots.com/Web-Pentest/SQL-Injection/MSSQL/MSSQL-Error-Based-Inje
 https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/ #MSSQL injection from .229 forum
 https://blog.xpnsec.com/extracting-master-mdf-hashes/ #extracting hashes from mdf database file
 https://www.exploit-db.com/docs/english/44348-error-based-sql-injection-in-order-by-clause-(mssql).pdf #Error based sql .229 forum
+https://www.hmailserver.com/documentation/latest/?page=howto_repair_mysql # sdf file for hmailserver, get passwords
