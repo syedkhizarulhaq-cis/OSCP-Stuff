@@ -215,4 +215,22 @@ curl -i iphere #get webserver headers using curl
 curl -i -L 10.11 #follow the redirect, if 302 on a request use this
 curl 10.11 -s -L | grep "title\|href" | sed -e 's/^[[:space:]]*//' #quickly check the title tag (as that can have the web application name in it) as well as any links 
 curl 10.11 -s -L | html2text | uniq #use html2text instead of opening your web browser ;)
+curl 10.11/robots.txt -s | html2text #read robots.txt using html2text
+
+Wordlists to explore:
+DirB - /usr/share/dirb/wordlists/
+wfuzz - /usr/share/wfuzz/wordlist/
+SecList - /usr/share/seclists/
+
+searchsploit Apache 2.4.7 | grep -v '/dos/' #remove any DoS exploits in our searches
+relax the search terms again, by trying:
+searchsploit apache 2.4 | grep -v '/dos/'
+searchsploit apache 2.x | grep -v '/dos/'
+searchsploit -t php 5.x #display title of exploits only
+searchsploit -t php 5.x | wc -l #word count for the exploit search
+searchsploit -t php 5.x | grep -v '/dos/' #
+searchsploit -t php 5.x | grep -v '/dos/' | grep -vi '\.php' | head 
+searchsploit --colour -t php 5.x | grep -v '/dos/' | grep -iv '\.php[^$]' #use "regex" (Regular Expressions) to filter all ".php" results except for when the end of the line, ends with ".php"
+
+
 
