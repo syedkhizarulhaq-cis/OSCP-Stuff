@@ -232,5 +232,7 @@ searchsploit -t php 5.x | grep -v '/dos/' #
 searchsploit -t php 5.x | grep -v '/dos/' | grep -vi '\.php' | head 
 searchsploit --colour -t php 5.x | grep -v '/dos/' | grep -iv '\.php[^$]' #use "regex" (Regular Expressions) to filter all ".php" results except for when the end of the line, ends with ".php"
 
+If nmap scan is taking time, run this:
+nmap 10.11 -p- -sT --reason --open --dns-server [REDACTED]
 
 
