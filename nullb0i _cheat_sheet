@@ -235,4 +235,5 @@ searchsploit --colour -t php 5.x | grep -v '/dos/' | grep -iv '\.php[^$]' #use "
 If nmap scan is taking time, run this:
 nmap 10.11 -p- -sT --reason --open --dns-server [REDACTED]
 
-
+Information gathering from rpc:
+rpcinfo -s 10.11
