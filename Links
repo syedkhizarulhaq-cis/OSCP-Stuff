@@ -29,3 +29,4 @@ https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/ #MSSQL inject
 https://blog.xpnsec.com/extracting-master-mdf-hashes/ #extracting hashes from mdf database file
 https://www.exploit-db.com/docs/english/44348-error-based-sql-injection-in-order-by-clause-(mssql).pdf #Error based sql .229 forum
 https://www.hmailserver.com/documentation/latest/?page=howto_repair_mysql # sdf file for hmailserver, get passwords
+https://infamoussyn.wordpress.com/tag/raptor_udf2-c/ #udf exploit mysql .252
