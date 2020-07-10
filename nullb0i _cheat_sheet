@@ -237,3 +237,7 @@ nmap 10.11 -p- -sT --reason --open --dns-server [REDACTED]
 
 Information gathering from rpc:
 rpcinfo -s 10.11
+
+If you dont have write permissions in Windows shell or is running in low intergrity mode:
+C:\Users\[username]\AppData\Local\Temp\Low>
+You can still write to the above folder :)
