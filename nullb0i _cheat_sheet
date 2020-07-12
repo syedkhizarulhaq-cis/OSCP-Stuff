@@ -245,3 +245,6 @@ rpcinfo -s 10.11
 If you dont have write permissions in Windows shell or is running in low intergrity mode:
 C:\Users\[username]\AppData\Local\Temp\Low>
 You can still write to the above folder :)
+
+Use below syntax when running gobuster with proxychains and pivot:
+HTTP_PROXY="socks5://127.0.0.1:8888/" gobuster dir -u 10.1.1.27 -w /opt/SecLists/Discovery/Web-Content/common.txt 
