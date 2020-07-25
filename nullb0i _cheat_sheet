@@ -275,3 +275,6 @@ nmap -sV --script=nfs-showmount -oN output.nfs <ip>
 Show if any drive to mount:
 showmount 10.10.10.180 -e
 
+Mount nfs drive:
+mount -t nfs remote.htb:/site_backups mount #first create mount folder
+
