@@ -271,3 +271,7 @@ netstat -ano | grep 8000 to confirm the port forward on your machine.
 
 See mounted drives using nmap script:
 nmap -sV --script=nfs-showmount -oN output.nfs <ip>
+
+Show if any drive to mount:
+showmount 10.10.10.180 -e
+
