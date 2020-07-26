@@ -278,3 +278,8 @@ showmount 10.10.10.180 -e
 Mount nfs drive:
 mount -t nfs remote.htb:/site_backups mount #first create mount folder
 
+Run powerup.ps1 script like this:
+PS C:\Users\Public> Import-Module ./powerup.ps1
+PS C:\Users\Public> Invoke-AllChecks | Out-File -Encoding ASCII checks.txt
+PS C:\Users\Public> type checks.txt 
+
