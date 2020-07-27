@@ -283,3 +283,11 @@ PS C:\Users\Public> Import-Module ./powerup.ps1
 PS C:\Users\Public> Invoke-AllChecks | Out-File -Encoding ASCII checks.txt
 PS C:\Users\Public> type checks.txt 
 
+To see files from alternate data streams:
+dir /R
+
+To read file from alternate data stream:
+hm.txt:root.txt:$DATA #alternate data stream
+
+more <hm.txt:root.txt:$DATA #type this command to read file root.txt
+
