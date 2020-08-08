@@ -293,3 +293,5 @@ more <hm.txt:root.txt:$DATA #type this command to read file root.txt
 
 Check stored passwords in bash history:
 cat ~/.bash_history | grep -i passw
+
+netstat -tupln #Internal ports on linux box
