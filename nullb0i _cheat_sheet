@@ -295,3 +295,5 @@ Check stored passwords in bash history:
 cat ~/.bash_history | grep -i passw
 
 netstat -tupln #Internal ports on linux box
+
+mysqldump Magic -u theseus -p #if mysql username and passwd found dump the database on victim machine 
