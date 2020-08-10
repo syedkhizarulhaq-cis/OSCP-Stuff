@@ -32,3 +32,4 @@ https://www.hmailserver.com/documentation/latest/?page=howto_repair_mysql # sdf 
 https://infamoussyn.wordpress.com/tag/raptor_udf2-c/ #udf exploit mysql .252
 https://guide.offsecnewbie.com/privilege-escalation/windows-pe #Windows priv esc
 https://www.jaiminton.com/HTB/Querier/# #Service UsOSvc abuse priv esc
+https://rastating.github.io/privilege-escalation-via-python-library-hijacking/ #if a .sh script is running python script and it is importing a library
