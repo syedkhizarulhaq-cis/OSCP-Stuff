@@ -306,3 +306,11 @@ jp.exe -t * -p shell.bat -l 4444 -c {9B1F122C-2982-4e91-AA8B-E071D54F2A4D} #Refe
 
 ssh login with private key:
 ssh hype@10.10.10.79 -i private_key
+
+If doing ssh gives this error(htb sunday):
+Unable to negotiate with 10.10.10.76 port 22022: no matching key exchange method found. 
+Their offer: gss-group1-sha1-toWM5Slw5Ew8Mqkay+al2g==,diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1
+
+Use this to select the suitable algo:
+ssh -oKexAlgorithms=diffie-hellman-group1-sha1 -p 22022 user@10.10.10.76
+
