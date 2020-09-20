@@ -316,3 +316,8 @@ Their offer: gss-group1-sha1-toWM5Slw5Ew8Mqkay+al2g==,diffie-hellman-group-excha
 Use this to select the suitable algo:
 ssh -oKexAlgorithms=diffie-hellman-group1-sha1 -p 22022 user@10.10.10.76
 
+Make the shell responsive with tab auto completion (htb irked):
+
+Firstly background the shell with ctrl z and then type:
+stty raw -echo
+then run fg to bring the shell back :)
