@@ -327,3 +327,6 @@ then run fg to bring the shell back :)
 
 create a file named listusers for bash execution (htb irked):
 echo "bash" > /tmp/listusers
+
+enuemrating snmp(htb conceal rk):
+snmpwalk -c public -v 1 10.10.10.116 > snmp-public.txt
