@@ -330,3 +330,6 @@ echo "bash" > /tmp/listusers
 
 enuemrating snmp(htb conceal rk):
 snmpwalk -c public -v 1 10.10.10.116 > snmp-public.txt
+
+Use wfuzz for parameter bruteforcing and hide code 404:
+wfuzz -u http://logger.htb/room.php?cod=1FUZZ -w /usr/share/seclists/Fuzzing/special-chars.txt --hc 404
