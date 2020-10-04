@@ -333,3 +333,11 @@ snmpwalk -c public -v 1 10.10.10.116 > snmp-public.txt
 
 Use wfuzz for parameter bruteforcing and hide code 404:
 wfuzz -u http://logger.htb/room.php?cod=1FUZZ -w /usr/share/seclists/Fuzzing/special-chars.txt --hc 404
+
+www-data@jarvis:/home/pepper$ sudo -l
+Matching Defaults entries for www-data on jarvis:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/binUser www-data may run the following commands on jarvis:
+    (pepper : ALL) NOPASSWD: /var/www/Admin-Utilities/simpler.py
+As can be seen above, we have the right to run the file simpler.py with pepper’s privileges. Let’s view the permissions on the file.
+
