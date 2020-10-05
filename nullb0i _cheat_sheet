@@ -341,3 +341,6 @@ Matching Defaults entries for www-data on jarvis:
     (pepper : ALL) NOPASSWD: /var/www/Admin-Utilities/simpler.py
 As can be seen above, we have the right to run the file simpler.py with pepper’s privileges. Let’s view the permissions on the file.
 
+To do a recursive search on files of the whole directory (htb node rk):
+grep -rl "password"
+
