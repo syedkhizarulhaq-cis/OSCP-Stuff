@@ -344,3 +344,7 @@ As can be seen above, we have the right to run the file simpler.py with pepperâ€
 To do a recursive search on files of the whole directory (htb node rk):
 grep -rl "password"
 
+Wordpress scanning:
+wpscan --url https://brainfuck.htb --disable-tls-checks --api-token
+wpscan --url https://brainfuck.htb --enumerate p --disable-tls-check
+
