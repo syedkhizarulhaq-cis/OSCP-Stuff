@@ -362,6 +362,9 @@ Path to id_rsa:
 file:///home/roosa/.ssh/id_rsa'> (htb devoops rk)
 
 Port Knocking:
+find the sequence in /etc/knockd file
 apt-get instsall knockd
 knock hostip hostports
 knock 10.0.0.0 4444 5555 6666 
+
+
