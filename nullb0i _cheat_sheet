@@ -372,4 +372,7 @@ apt-get instsall knockd
 knock hostip hostports
 knock 10.0.0.0 4444 5555 6666 
 
+If u dont have curl or wget or netcat on machine use python to download file:
+import urllib
+urllib.urlretrieve ("http://www.example.com/songs/mp3.mp3", "mp3.mp3")
 
