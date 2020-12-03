@@ -376,3 +376,4 @@ If u dont have curl or wget or netcat on machine use python to download file:
 import urllib
 urllib.urlretrieve ("http://www.example.com/songs/mp3.mp3", "mp3.mp3")
 
+python -c 'import urllib;urllib.urlretrieve ("http://www.example.com/songs/mp3.mp3", "mp3.mp3")'
