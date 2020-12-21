@@ -358,6 +358,9 @@ wpscan --url http://192.168.50.9/wordpress -e ap --plugins-detection aggressive 
 
 wpscan --url http://192.168.50.9/wordpress --usernames c0rrupt3d_brain --passwords /usr/share/wordlists/rockyou.txt #password burte forcing
 
+File to look for if u have wordpress running for database credentials:
+/var/www/html/weblog/wp-config.php
+
 #From htb optimum walkthrough comment section:
 Thanks for bringing Sherlock back!  :D
 
