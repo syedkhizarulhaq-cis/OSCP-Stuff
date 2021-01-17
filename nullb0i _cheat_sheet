@@ -339,6 +339,9 @@ snmpwalk -c public -v 1 10.10.10.116 > snmp-public.txt
 Use wfuzz for parameter bruteforcing and hide code 404:
 wfuzz -u http://logger.htb/room.php?cod=1FUZZ -w /usr/share/seclists/Fuzzing/special-chars.txt --hc 404
 
+Use wfuzz for bruteforcing with username or email list(htb quick ippsec):
+wfuzz -u http://10.10.10.186:9001/login.php -d "email=FUZZ&passsword=PleaseWork" -w emaillist
+
 www-data@jarvis:/home/pepper$ sudo -l
 Matching Defaults entries for www-data on jarvis:
     env_reset, mail_badpass,
