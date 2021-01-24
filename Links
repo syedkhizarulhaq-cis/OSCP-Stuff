@@ -43,3 +43,4 @@ https://www.blackhillsinfosec.com/password-spraying-other-fun-with-rpcclient/ #g
 Bug bounty links:
 https://hackerone.com/reports/1010466 #blind xss
 https://medium.com/bugbountywriteup/identifying-escalating-http-host-header-injection-attacks-7586d0ff2c67 #host header injection
+https://shahjerry33.medium.com/github-recon-its-really-deep-6553d6dfbb1f #github recon
