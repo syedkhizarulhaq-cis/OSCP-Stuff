@@ -44,3 +44,4 @@ Bug bounty links:
 https://hackerone.com/reports/1010466 #blind xss
 https://medium.com/bugbountywriteup/identifying-escalating-http-host-header-injection-attacks-7586d0ff2c67 #host header injection
 https://shahjerry33.medium.com/github-recon-its-really-deep-6553d6dfbb1f #github recon
+https://anugrahsr.github.io/posts/10-Password-reset-flaws/ #10 password reset flaws
