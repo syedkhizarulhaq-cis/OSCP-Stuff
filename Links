@@ -40,6 +40,10 @@ https://www.perforce.com/blog/vcs/svn-commands-cheat-sheet #svn cheatsheet
 https://raw.githubusercontent.com/borjmz/aspx-reverse-shell/master/shell.aspx #aspx reverse shell
 https://www.blackhillsinfosec.com/password-spraying-other-fun-with-rpcclient/ #good guide rpcclient 
 
+Threat Hunting:
+https://www.varonis.com/blog/sysmon-threat-detection-guide/#part-i
+
+
 Bug bounty links:
 https://hackerone.com/reports/1010466 #blind xss
 https://medium.com/bugbountywriteup/identifying-escalating-http-host-header-injection-attacks-7586d0ff2c67 #host header injection
