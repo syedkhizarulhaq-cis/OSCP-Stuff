@@ -40,6 +40,8 @@ https://www.perforce.com/blog/vcs/svn-commands-cheat-sheet #svn cheatsheet
 https://raw.githubusercontent.com/borjmz/aspx-reverse-shell/master/shell.aspx #aspx reverse shell
 https://www.blackhillsinfosec.com/password-spraying-other-fun-with-rpcclient/ #good guide rpcclient 
 https://www.howtogeek.com/298244/how-to-use-your-command-history-in-windows-powershell/ #powershell command history command let cheat sheet
+https://www.reliaquest.com/blog/credential-dumping-part-1-a-closer-look-at-vulnerabilities-with-windows-authentication-and-credential-management/  #lateral movement explained
+
 
 Threat Hunting:
 https://www.varonis.com/blog/sysmon-threat-detection-guide/#part-i
