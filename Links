@@ -41,7 +41,7 @@ https://raw.githubusercontent.com/borjmz/aspx-reverse-shell/master/shell.aspx #a
 https://www.blackhillsinfosec.com/password-spraying-other-fun-with-rpcclient/ #good guide rpcclient 
 https://www.howtogeek.com/298244/how-to-use-your-command-history-in-windows-powershell/ #powershell command history command let cheat sheet
 https://www.reliaquest.com/blog/credential-dumping-part-1-a-closer-look-at-vulnerabilities-with-windows-authentication-and-credential-management/  #lateral movement explained
-
+https://www.youtube.com/watch?v=b_-brZ2_76w&t=1524s #union based mysql injection in get parameter
 
 Threat Hunting:
 https://www.varonis.com/blog/sysmon-threat-detection-guide/#part-i
