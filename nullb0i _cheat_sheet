@@ -159,6 +159,9 @@ nmap -p 161 -sU -sC -sV 10.10.10.116 (htb conceal rk)
 gobuster usage:
 gobuster dir -u http://10.11.1:95 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -o gobuster9505
 
+gobuster usage with -x to add php extension or any other extension:
+gobuster dir -u http://10.11.1:95 -x php -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -o gobuster9505
+
 Check if netcat present:
 '<?php echo shell_exec("nc -v");exit;?>'
 
