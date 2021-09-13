@@ -420,3 +420,11 @@ Server side template injection payload (htb doctor):
 
 Copy output to clipboard:
 echo "hello" | xclip -se c
+ 
+Ippsec (Luaane htb)
+ffuf -u http://10.10.10.218/weather/FUZZ -w /opt/SecLists/Discovery/Web-Content/raft-small-words.txt
+
+ffuf -u http://10.10.10.218/weather/FUZZ -w /opt/SecLists/Fuzzing/special-chars.txt -mc 200,500 # match code http response 200 and 500
+
+ffuf -u http://10.10.10.218/weather/FUZZ -w /opt/SecLists/Fuzzing/special-chars.txt -mc 200,500 -fw 5 # match code http response 200 and 500 and filter word whos length is 5. 
+
