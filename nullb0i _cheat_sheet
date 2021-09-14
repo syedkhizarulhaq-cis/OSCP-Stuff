@@ -428,3 +428,4 @@ ffuf -u http://10.10.10.218/weather/FUZZ -w /opt/SecLists/Fuzzing/special-chars.
 
 ffuf -u http://10.10.10.218/weather/FUZZ -w /opt/SecLists/Fuzzing/special-chars.txt -mc 200,500 -fw 5 # match code http response 200 and 500 and filter word whos length is 5. 
 
+ffuf -u http://10.10.10.218/weather/forecast?city=\'FUZZ-- -w /opt/SecLists/Fuzzing/special-chars.txt -mc 200,500 -fw 9 #figuring out command injection in lua
