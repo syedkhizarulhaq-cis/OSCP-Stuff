@@ -162,6 +162,9 @@ gobuster dir -u http://10.11.1:95 -w /usr/share/wordlists/dirbuster/directory-li
 gobuster usage with -x to add php extension or any other extension:
 gobuster dir -u http://10.11.1:95 -x php -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -o gobuster9505
 
+If in gobuster wildcard error comes specify the wildcard flag like this:
+gobuster dir -u http://10.11.1:95 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 --wildcard 200,301,302 -o gobuster9505
+
 Check if netcat present:
 '<?php echo shell_exec("nc -v");exit;?>'
 
