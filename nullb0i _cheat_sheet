@@ -346,6 +346,10 @@ Firstly background the shell with ctrl z and then type:
 stty raw -echo
 then run fg to bring the shell back :)
 
+Bring the clear screen option into reverse shell:
+export TERM=xterm
+
+
 create a file named listusers for bash execution (htb irked):
 echo "bash" > /tmp/listusers
 
