@@ -43,6 +43,7 @@ https://www.howtogeek.com/298244/how-to-use-your-command-history-in-windows-powe
 https://www.reliaquest.com/blog/credential-dumping-part-1-a-closer-look-at-vulnerabilities-with-windows-authentication-and-credential-management/  #lateral movement explained
 https://www.youtube.com/watch?v=b_-brZ2_76w&t=1524s #union based mysql injection in get parameter
 https://www.youtube.com/watch?v=9-AQQkJA1X4 #different ways to try to get reverse shell on linux (ippsec Ophiuchi)
+https://0xdf.gitlab.io/2020/11/28/htb-sneakymailer.html #IMAP enumeration and commands
 
 Threat Hunting:
 https://www.varonis.com/blog/sysmon-threat-detection-guide/#part-i
