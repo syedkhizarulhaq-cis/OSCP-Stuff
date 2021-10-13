@@ -85,6 +85,9 @@ exploit -j #for runnung a listner in background in msfconsole
 find / -perm -4000 2>/dev/null #look for setuid binaries 
 find / -perm -4000 -ls 2>/dev/null #look for setuid binaries with permissions as well
 
+Download all files on an rsync server from fox folder:
+rsync -av fox@192.168.69.126::fox/ . (provingground fail machine)
+
 nmap --script vuln /usr/share/nmap/scripts/smb-check-vulns.nse 10.10.10.178 -p445 #nmap engine 
 nmap -p 445 --script "vuln and safe" -Pn -n 10.11.1.5  #For runnning nmap engine
 
