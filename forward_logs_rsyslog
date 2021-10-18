@@ -1,0 +1,11 @@
+$ModLoad imfile
+$InputFilePollInterval 10
+#$PrivDropToGroup adm
+$InputFileName /var/log/loadscripts.log
+$InputFileTag loadscripts
+$InputFileStateFile stat-loadscripts
+$InputFileSeverity Info
+$InputFileFacility local7
+$InputRunFileMonitor
+$InputFilePersistStateInterval 1000
+local7.* @30.76.99.183:5000
