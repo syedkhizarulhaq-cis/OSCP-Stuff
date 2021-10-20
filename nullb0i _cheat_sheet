@@ -280,6 +280,11 @@ If you dont have write permissions in Windows shell or is running in low intergr
 C:\Users\[username]\AppData\Local\Temp\Low>
 You can still write to the above folder :)
 
+
+The “cmd /c” is used to create a new shell, execute the provided command, and exit from the shell automatically. The cmd.exe also provides the /k option which will not exit from the created shell automatically. It will stay the newly created and command executed shell
+
+cmd /c dir 
+
 Use below syntax when running gobuster with proxychains and pivot:
 HTTP_PROXY="socks5://127.0.0.1:1234/" gobuster dir -u http://10.11.272 -w /usr/share/seclists/Discovery/Web-Content/common.txt -t 100 -o gobuster2
 
