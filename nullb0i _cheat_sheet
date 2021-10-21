@@ -62,6 +62,10 @@ file file #run this command to find if the file is identified as your prefered o
 
 dnsenum --enum example.htb
 
+
+Remote access to mssql server:
+sqsh -S 192.168.113.70:1435 -U sa
+
 sqlmap -r request.req #sqlmap for POST request 
 
 python -m SimpleHTTPServer #running python server on port 8000
