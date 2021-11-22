@@ -24,3 +24,7 @@ Sifting through the data, we find what looks like a plaintext password. Let’s 
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+If you want to save some time, query this specific key to find admin AutoLogon credentials:
+
+reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\winlogon"
