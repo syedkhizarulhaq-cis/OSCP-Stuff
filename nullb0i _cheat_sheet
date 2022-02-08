@@ -598,3 +598,18 @@ shutdown -r -t 10 && exit
 
 
 hashcat -m 1800 -a 0 -o found.txt --remove crack.hash /usr/share/wordlists/rockyou.txt
+
+#Add a directory to PATH in linux permanently:
+The recommended place to define permanent, system-wide environment variables applying to all users is in:
+
+/etc/environment
+(which is where the default PATH is defined)
+
+This will work in desktop or console, gnome-terminal or TTY, rain or shine ;)
+
+To edit, open the terminal and type:
+
+sudoedit /etc/environment
+(or open the file using sudo in your favorite text editor)
+
+To make it work without rebooting, run . /etc/environment or source /etc/environment. Since this file is just a simple script it will run and assign the new path to the PATH environment variable. To check run env and see the PATH value in the listing.
