@@ -613,3 +613,6 @@ sudoedit /etc/environment
 (or open the file using sudo in your favorite text editor)
 
 To make it work without rebooting, run . /etc/environment or source /etc/environment. Since this file is just a simple script it will run and assign the new path to the PATH environment variable. To check run env and see the PATH value in the listing.
+
+#use swaks to send email on a specified mail server:
+swaks --to nullboi@test.com --server mail.test.com --port 465 -tlsc
