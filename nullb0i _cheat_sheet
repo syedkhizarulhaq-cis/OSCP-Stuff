@@ -617,5 +617,11 @@ To make it work without rebooting, run . /etc/environment or source /etc/environ
 #use swaks to send email on a specified mail server:
 swaks --to nullboi@test.com --server mail.test.com --port 465 -tlsc
 
+#List down all the running proesses while the iPhone is connected via USB cable:
+
+frida-ps -Ua
+
 #Use Frida to hook onto an iOS application:
 frida -U EnterprocessNamehere
+
+
