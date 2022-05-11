@@ -624,4 +624,10 @@ frida-ps -Ua
 #Use Frida to hook onto an iOS application:
 frida -U EnterprocessNamehere
 
+Hook to the iOS application via network:
+ssh root@192.168.1.38 #Get an ssh onto the phone
+frida-server -l 192.168.1.38 #start the frida server on the phone
+
+objection --gadget "TypeApplicationNamehere" -N -h 192.168.1.38 explore #Hook to the application via Objection
+
 
