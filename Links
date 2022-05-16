@@ -71,3 +71,4 @@ https://betterprogramming.pub/how-to-make-ios-app-secure-from-jailbroken-device-
 https://book.hacktricks.xyz/mobile-pentesting/ios-pentesting/ios-basics #Concept of Apple's Data protection API
 https://web.archive.org/web/20160306144238/http://hueniverse.com/2015/07/08/on-securing-web-session-ids/ #Securing session ids
 https://medium.com/@jakkornat/saving-data-in-ios-keychain-e9ae885abc48 #Save sensitive data in iOS keychain
+https://localcoder.org/storing-authentication-tokens-on-ios-nsuserdefaults-vs-keychain #Store access tokens or Session keys inside keychain instead of nsuserdefaults
