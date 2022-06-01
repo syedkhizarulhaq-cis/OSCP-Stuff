@@ -73,3 +73,7 @@ https://web.archive.org/web/20160306144238/http://hueniverse.com/2015/07/08/on-s
 https://medium.com/@jakkornat/saving-data-in-ios-keychain-e9ae885abc48 #Save sensitive data in iOS keychain
 https://localcoder.org/storing-authentication-tokens-on-ios-nsuserdefaults-vs-keychain #Store access tokens or Session keys inside keychain instead of nsuserdefaults
 https://www.appknox.com/blog/bypass-ssl-pinning-in-ios-app#:~:text=The%20basic%20approach%20for%20bypassing,will%20use%20the%20Hotspot%20method. #SSL pinning bypass iOS
+
+Detecting rouge wifi device in enterprise environment:
+
+https://nmap.org/book/osdetect-find-rogue-ap.html
